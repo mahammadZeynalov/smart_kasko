@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=no">
-    <title>Form Step 4</title>
+    <title>SMART KASKO</title>
 
     <link rel="icon" type="image/png" href="img/favicon.png">
 
@@ -14,57 +14,65 @@
     <link href="css/responsive.css?v=101" rel="stylesheet" type="text/css" />
     <!-- <link href="css/font/stylesheet.css" rel="stylesheet" type="text/css" /> -->
 
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles_test.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
 </head>
 
 <body class="container layout">
 
-    <header class="header">
-        <a href="#">SMART KASKO</a>
+    <header class="pt-4 pb-4">
+        <a href="#" class="header-link">SMART KASKO</a>
     </header>
 
-    <main class="content" style="justify-content: space-between;">
-        <div class="content-left" style="width: 100%;">
-            <h3 class="questions-header">Aşağıdakılardan hansı sizi daha çox ifadə edir?</h3>
-            <div class="questions-container">
-                <div class="questions-left-side">
+    <main>
+        <div class="row mb-4">
+            <div class="col">
+                <h1 class="title-bold" style="text-align: left; color: #737B7D;">Aşağıdakılardan hansı sizi daha çox ifadə edir?</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="questions">
                     <div class="question-panel with-text">
                         <div>
-                            <input type="radio" class="radio-button" name="action" />
+                            <input type="radio" name="action" />
                             <div class="question-text">Avtomobilimin yaşı 5-dən azdır.</div>
                         </div>
                         <img class="question-image" src="./assets/form_step_4/Rectangle.png" alt="question-image" />
                     </div>
                     <div class="question-panel with-text">
                         <div>
-                            <input type="radio" class="radio-button" name="action" />
+                            <input type="radio" name="action" />
                             <div class="question-text">Avtomobilimin yaşı 5-15 aralığındadır.</div>
                         </div>
                         <img class="question-image" src="./assets/form_step_4/Rectangle (1).png" alt="question-image" />
                     </div>
                     <div class="question-panel with-text">
                         <div>
-                            <input type="radio" class="radio-button" name="action" />
+                            <input type="radio" name="action" />
                             <div class="question-text">Avtomobilimin yaşı 15-20 aralığındadır.</div>
                         </div>
                         <img class="question-image" src="./assets/form_step_4/Rectangle (2).png" alt="question-image" />
 
                     </div>
                 </div>
-                <div class="questions-right-side" style="margin-right: 100px;">
-                    <img src="./assets/form_step_4/bro.png" alt="hero-image" />
-                </div>
             </div>
-            <div class="questions-btns-container">
-                <button class="questions-btn-back">Əvvəlki</button>
-                <button class="questions-btn-next">Növbəti</button>
+            <div class="col-lg-6">
+                <img class="responsive-image visibility" src="./assets/form_step_4/bro.png" alt="hero-image" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="questions-btns-container">
+                    <a href="./form_step_1.html" class="btn-back">Əvvəlki</a>
+                    <a href="./form_step_3.html" class="btn-next">Növbəti</a>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="d-flex justify-content-center pt-4 pb-4">
         <div>
             © PASHA Insurance. All rights reserved.
         </div>

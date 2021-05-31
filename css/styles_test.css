@@ -5,10 +5,16 @@ input[type="radio"] {
     cursor: pointer;
 }
 
+main {
+    margin-top: 20px;
+}
+
 .layout {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
 
 .header-link {
@@ -16,6 +22,13 @@ input[type="radio"] {
     font-size: 24px;
     font-weight: 700;
     color: #0A8F62;
+}
+
+.header-line {
+    border-bottom: 1px solid #E2E5E6;
+    position: absolute;
+    top: 83px;
+    width: 100%;
 }
 
 .title-small {
@@ -295,16 +308,20 @@ input[type="radio"] {
     margin-right: 200px;
 }
 
-@media (min-width: 240px) and (max-width: 375px) {
-    /* .left {
+@media screen and (max-width: 576px) {
+    .left {
         text-align: left;
-    } */
+    }
     .primary-button {
         width: 100%;
     }
+    .title-bold {
+        font-size: 28px;
+        line-height: normal;
+    }
 }
 
-@media (min-width: 240px) and (max-width: 570px) {
+@media screen and (max-width: 576px) {
     .two_select {
         display: flex;
         flex-direction: column;
@@ -316,7 +333,7 @@ input[type="radio"] {
     }
 }
 
-@media (min-width: 240px) and (max-width: 470px) {
+@media screen and (max-width: 576px) {
     .questions {
         width: 100%;
     }

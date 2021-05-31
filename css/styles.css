@@ -5,69 +5,65 @@ input[type="radio"] {
     cursor: pointer;
 }
 
+main {
+    margin-top: 20px;
+}
+
 .layout {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
 
-.header {
-    padding: 20px 0;
-    border-bottom: 1px solid #E5E5E5;
-}
-
-.header a {
+.header-link {
     text-decoration: none;
     font-size: 24px;
     font-weight: 700;
     color: #0A8F62;
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px
+.header-line {
+    border-bottom: 1px solid #E2E5E6;
+    position: absolute;
+    top: 83px;
+    width: 100%;
 }
 
-
-/* INDEX */
-
-.content {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content-centered {
-    text-align: center;
-}
-
-.content-text-title {
+.title-small {
     font-size: 14px;
     font-weight: 600;
     font-style: normal;
     color: #737B7D;
+    text-align: center;
 }
 
-.content-text-main-description {
+.title-bold {
     font-size: 32px;
     font-weight: 630;
     font-style: normal;
     line-height: 40px;
-    margin-bottom: 20px;
+    text-align: center;
 }
 
-.content-text-sub-description {
+.title-sub {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
     line-height: 22px;
     color: #737B7D;
+    text-align: center;
 }
 
-.content-button button {
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.primary-button {
+    display: block;
+    text-decoration: none;
     font-weight: 500;
     color: #ffffff;
     background: linear-gradient(93.22deg, rgb(10, 143, 98) -7.84%, rgb(0, 142, 94) 111.31%);
@@ -79,129 +75,27 @@ input[type="radio"] {
     border-radius: 6px;
     cursor: pointer;
     border: none;
-    margin-top: 30px;
 }
 
-@media (min-width: 240px) and (max-width: 570px) {
-    .main-page {
-        margin-top: 30px;
-        text-align: left;
-        padding: 20px
-    }
-    .content-text {
-        justify-content: left;
-    }
-    .content-text-main-description-sm {
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px;
-    }
-    .content-button {
-        padding: 20px
-    }
-    .content-button button {
-        width: 100%;
-    }
-    .m-b-iphone {
-        margin-bottom: 100px;
-    }
-    .two_select {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .select {
-        width: 100% !important;
-        padding-bottom: 16px;
-    }
-    .responsive-margin {
-        margin-top: 30px;
-    }
+.primary-button:hover {
+    color: white;
 }
 
-@media (min-width: 570px) and (max-width: 3000px) {
-    .form_wrapper {
-        width: 650px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .questions-right-side img {
-        display: none;
-    }
-    .offer-container-right {
-        display: none;
-    }
-    .end-page-right-side {
-        display: none;
-    }
-}
-
-@media (min-width: 240px) and (max-width: 470px) {
-    .questions-left-side {
-        width: 100%;
-    }
-    .question-panel {
-        flex-direction: column;
-        background-color: #E2E5E6;
-    }
-    .question-panel img {
-        width: 100%;
-    }
-    .question-panel input[type="radio"] {
-        margin: 5px;
-    }
-    .questions-btns-container {
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-    }
-    .questions-btn-back {
-        margin-right: 0;
-    }
-    .with-text .question-image {
-        margin-left: 0;
-    }
-    .request-form-title {
-        text-align: center !important;
-    }
-    .end-page-left-side {
-        text-align: center !important;
-    }
-}
-
-
-/* FORM STEP #1 */
-
-.content-form-step-1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-
-/* FORM STEP #2 */
-
-.content-left {
-    text-align: left;
-}
-
-.questions-header {
-    color: #737B7D;
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: 0.1px;
-    font-weight: 600;
-    text-align: left;
-    margin-top: 20px;
-}
-
-.questions-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 25px;
+.secondary-button {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(47, 188, 238);
+    background: rgb(245, 245, 245);
+    width: 160px;
+    height: 56px;
+    font-size: 16px;
+    line-height: 56px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    margin-right: 20px;
 }
 
 .question-panel {
@@ -209,8 +103,19 @@ input[type="radio"] {
     margin-bottom: 20px;
 }
 
+.question-image {
+    width: 240px;
+    max-height: 175px;
+}
 
-/* FORM STEP #3 */
+.question-panel input[type="radio"] {
+    margin-right: 10px;
+}
+
+.questions-btns-container {
+    margin-left: 20px;
+    display: flex;
+}
 
 .with-text {
     display: block;
@@ -228,19 +133,13 @@ input[type="radio"] {
     margin-left: 20px;
 }
 
-.question-image {
-    width: 240px;
-}
-
 .question-panel input[type="radio"] {
     margin-right: 10px;
 }
 
-.questions-btns-container {
-    margin-left: 20px;
-}
-
-.questions-btn-back {
+.btn-back {
+    display: block;
+    text-decoration: none;
     font-weight: 500;
     color: rgb(47, 188, 238);
     background: rgb(245, 245, 245);
@@ -255,7 +154,9 @@ input[type="radio"] {
     margin-right: 20px;
 }
 
-.questions-btn-next {
+.btn-next {
+    display: block;
+    text-decoration: none;
     font-weight: 500;
     color: #ffffff;
     background: linear-gradient(93.22deg, rgb(10, 143, 98) -7.84%, rgb(0, 142, 94) 111.31%);
@@ -269,8 +170,9 @@ input[type="radio"] {
     border: none;
 }
 
-
-/* FORM STEP #6 */
+.btn-next:hover {
+    color: white;
+}
 
 .offer-container {
     display: flex;
@@ -296,12 +198,13 @@ input[type="radio"] {
 .offer-price-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: baseline;
     margin-bottom: 25px;
 }
 
 .offer-price-value {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 800;
 }
 
@@ -387,18 +290,12 @@ input[type="radio"] {
     margin-bottom: 10px;
 }
 
-
-/* REQUEST FORM */
-
 .request-form-title {
     color: #737B7D !important;
     font-size: 26px !important;
     text-align: left;
     margin-bottom: 30px;
 }
-
-
-/* END PAGE */
 
 .end-page-left-side {
     padding: 20px;
@@ -407,4 +304,76 @@ input[type="radio"] {
 
 .end-page-right-side {
     margin-right: 200px;
+}
+
+@media screen and (max-width: 576px) {
+    .left {
+        text-align: left;
+    }
+    .primary-button {
+        width: 100%;
+    }
+    .title-bold {
+        font-size: 28px;
+        line-height: normal;
+    }
+    .two_select {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .select {
+        width: 100% !important;
+        padding-bottom: 16px;
+    }
+    .questions {
+        width: 100%;
+    }
+    .question-panel {
+        flex-direction: column;
+        background-color: #E2E5E6;
+        cursor: pointer;
+    }
+    .question-panel img {
+        width: 100%;
+    }
+    .question-panel input[type="radio"] {
+        margin: 5px;
+    }
+    .questions-btns-container {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0 !important;
+    }
+    .with-text .question-image {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .visibility {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .visibility-md {
+        display: none;
+    }
+}
+
+
+/* OVERRIDE */
+
+.form_wrapper>div {
+    padding: 0;
+}
+
+.single_chekbox input:not(:checked)+em {
+    border: 1px solid #737B7D;
+    background-color: white;
+}
+
+input {
+    font-family: inherit !important;
 }

@@ -5,6 +5,40 @@ input[type="radio"] {
     cursor: pointer;
 }
 
+.button_preloader::after {
+    color: rgba(255, 255, 255, 0) !important;
+    position: relative;
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    width: 36px;
+    height: 36px;
+    margin: 0 auto;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    top: calc(50% - 18px);
+    left: calc(50% - 18px);
+    z-index: 1;
+    animation: cssload-spin 575ms infinite linear;
+    -o-animation: cssload-spin 575ms infinite linear;
+    -ms-animation: cssload-spin 575ms infinite linear;
+    -webkit-animation: cssload-spin 575ms infinite linear;
+    -moz-animation: cssload-spin 575ms infinite linear;
+}
+
+a.disabled {
+    pointer-events: none;
+    color: #ccc;
+    background: #F4F5F4 !important;
+}
+
+.alert {
+    border-color: #f00 !important;
+}
+
 main {
     margin-top: 20px;
 }
@@ -100,12 +134,14 @@ main {
 
 .question-panel {
     display: flex;
+    max-width: 350px;
     margin-bottom: 20px;
 }
 
 .question-image {
-    width: 240px;
-    max-height: 175px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .question-panel input[type="radio"] {
@@ -334,9 +370,6 @@ main {
         background-color: #E2E5E6;
         cursor: pointer;
     }
-    .question-panel img {
-        width: 100%;
-    }
     .question-panel input[type="radio"] {
         margin: 5px;
     }
@@ -375,5 +408,9 @@ main {
 }
 
 input {
+    font-family: inherit !important;
+}
+
+.two_select select {
     font-family: inherit !important;
 }

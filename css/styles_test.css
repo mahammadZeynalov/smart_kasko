@@ -64,6 +64,10 @@ input[type="radio"] {
     border: none;
 }
 
+.primary-button:hover {
+    color: white;
+}
+
 .secondary-button {
     display: block;
     text-decoration: none;
@@ -154,6 +158,10 @@ input[type="radio"] {
     border-radius: 6px;
     cursor: pointer;
     border: none;
+}
+
+.btn-next:hover {
+    color: white;
 }
 
 .offer-container {
@@ -340,6 +348,22 @@ input[type="radio"] {
 
 @media screen and (max-width: 1200px) {
     .visibility {
+        display: none;
+    }
+    .visibility-md {}
+    /* .offer-container-right {
+        display: none;
+    }
+    .end-page-right-side {
+        display: none;
+    } */
+}
+
+@media screen and (max-width: 992px) {
+    .visibility {
+        display: none;
+    }
+    .visibility-md {
         display: none;
     }
     /* .offer-container-right {

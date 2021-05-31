@@ -3,6 +3,7 @@ input[type="radio"] {
     -webkit-appearance: auto !important;
     -moz-appearance: auto !important;
     cursor: pointer;
+    min-width: 15px;
 }
 
 input[type="radio"]:checked {

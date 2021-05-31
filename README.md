@@ -1,2 +1,0 @@
-# PASHA Insurance Online Store
-

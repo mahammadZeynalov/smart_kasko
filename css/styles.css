@@ -143,6 +143,10 @@ main {
     margin-bottom: 20px;
 }
 
+.question-panel:hover {
+    cursor: pointer;
+}
+
 .question-image {
     width: 100%;
     height: 200px;

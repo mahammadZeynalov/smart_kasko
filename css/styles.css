@@ -1,10 +1,11 @@
-input[type="radio"] {
+/* input[type="radio"] {
     outline: auto !important;
     -webkit-appearance: auto !important;
     -moz-appearance: auto !important;
     cursor: pointer;
     min-width: 15px;
-}
+} */
+
 
 input[type="radio"]:checked {
     background-color: #005CC8;
@@ -139,7 +140,7 @@ main {
 
 .question-panel {
     display: flex;
-    max-width: 350px;
+    max-width: 360px;
     margin-bottom: 20px;
 }
 
@@ -171,7 +172,7 @@ main {
 }
 
 .with-text .question-image {
-    margin-left: 20px;
+    margin-left: 32px;
 }
 
 .question-panel input[type="radio"] {
@@ -398,7 +399,7 @@ main {
         margin: 5px;
     }
     .question-panel input[type="checkbox"] {
-        margin: 5px 5px 5px 0px;
+        margin: 5px 5px 5px 5px;
     }
 
     .questions-btns-container {
@@ -444,9 +445,12 @@ input {
 }
 
 .form-check-input {
-    width: 24px !important;
-    height: 24px !important;
-    margin-top: 0 !important;
+    cursor: pointer;
+    -ms-transform: scale(1.05); /* IE */
+    -moz-transform: scale(1.05); /* FF */
+    -webkit-transform: scale(1.05); /* Safari and Chrome */
+    -o-transform: scale(1.05); /* Opera */
+    padding: 10px;
 }
 
 .form-check-input:checked {

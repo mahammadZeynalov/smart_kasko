@@ -153,10 +153,6 @@ main {
     object-fit: cover;
 }
 
-.question-panel input[type="radio"] {
-    margin-right: 10px;
-}
-
 .questions-btns-container {
     margin-left: 20px;
     display: flex;
@@ -179,6 +175,10 @@ main {
 }
 
 .question-panel input[type="radio"] {
+    margin-right: 10px;
+}
+
+.question-panel input[type="checkbox"] {
     margin-right: 10px;
 }
 
@@ -390,9 +390,17 @@ main {
         background-color: #E2E5E6;
         cursor: pointer;
     }
+
+    .question-panel.no-image {
+        background-color: white;
+    }
     .question-panel input[type="radio"] {
         margin: 5px;
     }
+    .question-panel input[type="checkbox"] {
+        margin: 5px 5px 5px 0px;
+    }
+
     .questions-btns-container {
         display: flex;
         justify-content: space-between;
@@ -433,4 +441,14 @@ input {
 
 .two_select select {
     font-family: inherit !important;
+}
+
+.form-check-input {
+    width: 24px !important;
+    height: 24px !important;
+    margin-top: 0 !important;
+}
+
+.form-check-input:checked {
+    background-color: #0193CC !important;
 }

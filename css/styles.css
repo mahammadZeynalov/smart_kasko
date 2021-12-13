@@ -159,6 +159,11 @@ main {
     display: flex;
 }
 
+.sp-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
 .with-text {
     display: block;
     justify-content: center;
@@ -363,6 +368,11 @@ main {
     max-width: 200px;
 }
 
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 576px) {
     .left {
         text-align: left;
@@ -407,6 +417,11 @@ main {
         justify-content: space-between;
         margin-left: 0 !important;
     }
+    .sp-btns {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0 !important;
+    }
     .with-text .question-image {
         margin-left: 0;
     }
@@ -423,6 +438,7 @@ main {
         display: none;
     }
 }
+
 
 
 /* OVERRIDE */

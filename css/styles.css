@@ -172,7 +172,6 @@ main {
 
 .questions-btns-container {
   display: flex;
-  justify-content: flex-end;
 }
 
 .sp-btns {
@@ -512,7 +511,6 @@ main {
 
   .question-panel {
     flex-direction: column;
-    background-color: #e2e5e6;
     cursor: pointer;
   }
 
@@ -526,12 +524,6 @@ main {
 
   .question-panel input[type="checkbox"] {
     margin: 5px 5px 5px 5px;
-  }
-
-  .questions-btns-container {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 0 !important;
   }
 
   .sp-btns {
@@ -652,10 +644,6 @@ input[type="radio"].form-check-input  {
 .select {
   display: flex;
   flex-direction: column;
-}
-
-.question-text {
-  margin-bottom: 10px;
 }
 
 .img-wrapper {

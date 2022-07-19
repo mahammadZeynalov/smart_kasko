@@ -164,10 +164,11 @@ main {
   top: 10px;
   left: 10px;
   visibility: hidden;
+  z-index: 100;
 }
 
 .question-image:hover {
-    background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .questions-btns-container {
@@ -556,7 +557,6 @@ main {
   .questions-btns-container {
     justify-content: flex-start;
   }
-  
 }
 
 /* OVERRIDE */
@@ -578,7 +578,7 @@ input {
   font-family: inherit !important;
 }
 
-input[type="radio"].form-check-input  {
+input[type="radio"].form-check-input {
   cursor: pointer;
   -ms-transform: scale(1.05); /* IE */
   -moz-transform: scale(1.05); /* FF */
@@ -593,11 +593,10 @@ input[type="radio"].form-check-input  {
 
 .form-check-input:checked + label .radio-btn-icon {
   visibility: initial;
-  opacity: 1;
 }
 
 .form-check-input:checked + label .question-image {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .select-label {
@@ -636,7 +635,9 @@ input[type="radio"].form-check-input  {
   border-color: rgb(203, 203, 203) !important;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow {
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
   top: 15px !important;
   right: 10px !important;
 }
@@ -648,4 +649,19 @@ input[type="radio"].form-check-input  {
 
 .img-wrapper {
   position: relative;
+}
+
+.tooltip-title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+
+  letter-spacing: 0.3px;
+
+  /* Light / Gray dark */
+
+  color: #737b7d;
 }
